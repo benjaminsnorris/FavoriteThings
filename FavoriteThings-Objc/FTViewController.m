@@ -10,7 +10,7 @@
 
 @interface FTViewController ()
 
-@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -20,26 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15, 150, 290, 30)];
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setTitle:@"Touch me" forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(changeLabelText) forControlEvents:UIControlEventTouchDown];
-    [button addTarget:self action:@selector(changeLabelTextBack) forControlEvents:UIControlEventTouchUpInside];
+    self.tableView = [UITableView new];
+    [self.view addSubview:self.tableView];
     
-    self.label = [[UILabel alloc] initWithFrame:CGRectMake(15, 200, 290, 30)];
-    self.label.text = @"Change me";
-    self.label.textAlignment = NSTextAlignmentCenter;
-    
-    [self.view addSubview:button];
-    [self.view addSubview:self.label];
-}
-
-- (void)changeLabelText {
-    self.label.text = @"Thank you for changing me";
-}
-
-- (void)changeLabelTextBack {
-    self.label.text = @"Change me";
 }
 
 - (void)didReceiveMemoryWarning {

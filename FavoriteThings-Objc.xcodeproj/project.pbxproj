@@ -12,6 +12,7 @@
 		71DE96F119A8D5360021E6F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DE96F019A8D5360021E6F7 /* Images.xcassets */; };
 		71DE96FD19A8D5360021E6F7 /* FavoriteThings_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE96FC19A8D5360021E6F7 /* FavoriteThings_ObjcTests.m */; };
 		E781C34419C271B800F48FA8 /* FTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E781C34319C271B800F48FA8 /* FTViewController.m */; };
+		E781C34719C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E781C34619C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		71DE96FC19A8D5360021E6F7 /* FavoriteThings_ObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteThings_ObjcTests.m; sourceTree = "<group>"; };
 		E781C34219C271B800F48FA8 /* FTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTViewController.h; sourceTree = "<group>"; };
 		E781C34319C271B800F48FA8 /* FTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTViewController.m; sourceTree = "<group>"; };
+		E781C34519C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteThingsTableViewDataSource.h; sourceTree = "<group>"; };
+		E781C34619C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteThingsTableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 			children = (
 				71DE96ED19A8D5360021E6F7 /* AppDelegate.h */,
 				71DE96EE19A8D5360021E6F7 /* AppDelegate.m */,
+				E781C34519C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.h */,
+				E781C34619C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.m */,
 				E781C34219C271B800F48FA8 /* FTViewController.h */,
 				E781C34319C271B800F48FA8 /* FTViewController.m */,
 				71DE96F019A8D5360021E6F7 /* Images.xcassets */,
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DE96EF19A8D5360021E6F7 /* AppDelegate.m in Sources */,
+				E781C34719C27B0500F48FA8 /* FavoriteThingsTableViewDataSource.m in Sources */,
 				71DE96EC19A8D5360021E6F7 /* main.m in Sources */,
 				E781C34419C271B800F48FA8 /* FTViewController.m in Sources */,
 			);

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "FTViewController.h"
+#import "FavoriteThingsTableViewDataSource.h"
 
 @interface AppDelegate ()
 
