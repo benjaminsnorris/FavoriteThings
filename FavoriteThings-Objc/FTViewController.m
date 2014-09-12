@@ -7,10 +7,12 @@
 //
 
 #import "FTViewController.h"
+#import "FavoriteThingsTableViewDataSource.h"
 
 @interface FTViewController ()
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) FavoriteThingsTableViewDataSource *dataSource;
 
 @end
 
@@ -20,8 +22,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.tableView = [UITableView new];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:self.tableView];
+    
+    self.dataSource = [FavoriteThingsTableViewDataSource new];
+    [self.dataSource registerTableView:self.tableView];
+    self.tableView.dataSource = self.dataSource;
+    
     
 }
 
